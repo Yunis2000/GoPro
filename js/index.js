@@ -32,3 +32,18 @@ for (let i = 0; i < number; i += 1) {
 
   console.log("Непарне i: ", i); // 1, 3, 5, 7, 9
 }
+function formatMessage(message, maxLength) {
+  let result;
+  // Change code below this line
+  if (maxLength >= message.length){
+    result = message;
+  }else {
+    result = message.slice(0, maxLength) + "...";
+  }
+  // Change code above this line
+  return result;
+}
+const myMessage = formatMessage("Curabitur ligula sapien", 16);
+  console.log(myMessage); // 1, 3, 5, 7, 9
+const pass1 = password.slice(0, 16) + "Yura";
+  console.log(pass1);
